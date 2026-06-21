@@ -1,0 +1,162 @@
+body {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
+p::selection {
+    background: black;
+    color: rgb(28, 215, 28);
+}
+
+h2::selection {
+    background: black;
+    color: rgb(244, 0, 252);
+}
+
+.header {
+    color: beige;
+    text-align: center;
+}
+
+h1::selection {
+    background-color: black;
+    color:rgb(215, 140, 28)
+}
+
+.info {
+    color: skyblue;
+    margin-left: auto;
+    font-size: 19px;
+    font-weight: bold;
+    overflow: auto;
+}
+
+.info h2 {
+    margin-top: 0;
+    color: skyblue;
+}
+
+.img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid skyblue;
+    border-bottom: 5px solid skyblue;
+}
+
+.img::selection {
+    background: rgb(97, 252, 0);
+    color: white;
+}
+
+li::selection {
+    background: black;
+    color: rgb(199, 243, 25);
+}
+
+.planets li:hover {
+    color: lightgreen;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moons li:hover {
+    color: aqua;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container a {
+    font-size: large;
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-size: large;
+    color:rgb(142, 113, 153);
+    cursor: pointer;
+}
+
+button,
+button:link,
+button:visited {
+    background-color: beige;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 152);
+}
+
+button:active {
+    background-color: rgb(183, 240, 183);
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: red;
+}
+
+.href {
+    text-decoration: none;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.planets {
+    margin-bottom: 20px;
+}
+
+.planets:hover,
+.moons:hover {
+    margin-bottom: -15.5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(126, 195, 223);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    text-align: center;
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: rgb(82, 206, 255);
+}
+
+body {
+    margin: 0px
+}
