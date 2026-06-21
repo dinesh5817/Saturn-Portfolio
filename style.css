@@ -183,19 +183,22 @@ a:active {
 
 @media (max-width: 640px) {
     .navbar {
-        padding: 8px 0;
+        padding: 6px 0;
     }
     .navbar ul {
-        gap: 6px;
-        padding: 8px 12px;
-        width: calc(100% - 24px);
+        gap: 8px;
+        padding: 6px 10px;
+        width: calc(100% - 20px);
         max-width: none;
         flex-wrap: wrap;
         justify-content: center;
     }
     .navbar a {
-        padding: 8px 10px;
-        font-size: 14px;
+        padding: 6px 8px;
+        font-size: 13px;
+        white-space: normal;
+        flex: 0 1 auto;
+        min-width: 0;
     }
 }
 
