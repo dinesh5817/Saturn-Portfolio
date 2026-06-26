@@ -7,3 +7,213 @@ body {
     background-size: cover;
     color: white;
 }
+
+p::selection {
+    background: black;
+    color: rgb(28, 215, 28);
+}
+
+h2::selection {
+    background: black;
+    color: rgb(244, 0, 252);
+}
+
+.header {
+    color: beige;
+    text-align: center;
+}
+
+h1::selection {
+    background-color: black;
+    color:rgb(215, 140, 28)
+}
+
+.info {
+    color: skyblue;
+    margin-left: auto;
+    font-size: 19px;
+    font-weight: bold;
+    overflow: auto;
+}
+
+.info h2 {
+    margin-top: 0;
+    color: skyblue;
+}
+
+.img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid skyblue;
+    border-bottom: 5px solid skyblue;
+}
+
+.img::selection {
+    background: rgb(97, 252, 0);
+    color: white;
+}
+
+li::selection {
+    background: black;
+    color: rgb(199, 243, 25);
+}
+
+.planets li:hover {
+    color: lightgreen;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moons li:hover {
+    color: aqua;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container a {
+    font-size: large;
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-size: large;
+    color:rgb(142, 113, 153);
+    cursor: pointer;
+}
+
+button,
+button:link,
+button:visited {
+    background-color: beige;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 152);
+}
+
+button:active {
+    background-color: rgb(183, 240, 183);
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: red;
+}
+
+.href {
+    text-decoration: none;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.planets {
+    margin-bottom: 20px;
+}
+
+.planets:hover,
+.moons:hover {
+    margin-bottom: -15.5px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    list-style-type: none;
+    width: min(75%, 960px);
+    padding: 10px 20px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 640px;
+    background-color: rgba(126, 195, 223, 0.88);
+    border-radius: 40px;
+    box-shadow: 8px 8px 18px rgba(64, 201, 255, 0.88);
+    overflow: hidden;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 6px 0;
+    }
+    .navbar ul {
+        gap: 6px;
+        padding: 6px 10px;
+        width: calc(100% - 20px);
+        max-width: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar a {
+        padding: 6px 8px;
+        font-size: 13px;
+        white-space: normal;
+        flex: 0 1 auto;
+        min-width: 0;
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
